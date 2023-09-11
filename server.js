@@ -1,8 +1,9 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
+const ayarlar = require("./config.json");
 
 const bot = new AoiClient({
-    token: process.env.token,
-    prefix: "$getGuildVar[prefix]",
+    token: ayarlar.token,
+    prefix: ayarlar.prefix,
     intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates"],
     events: ["onMessage", "onInteractionCreate"],
     database: {
