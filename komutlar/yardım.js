@@ -1,7 +1,7 @@
 module.exports = [{
   name: "yardım",
   code: `
-  $title[DarkBot Yardım]
+  $title[SunBot Yardım]
   $description[
   Botun yardım sayfasına hoşgeldiniz.
 
@@ -17,8 +17,6 @@ module.exports = [{
            $addButton[1;📘Kullanıcı;secondary;kullanici;false;]
              $addButton[1;📕Moderasyon;secondary;mod;false;]
   $addButton[1;📗Eğlence;secondary;eglence;false;]
-    $onlyIf[$getVar[bakım]!=var;Botta bakım çalışması var! Şuanda komutları kullanamazsın.]
-    $onlyIf[$getGlobalUserVar[karaliste;$authorID]!=var;Kara listedesin! Komutları kullanamazsın.]
   `
 },
                   ,{
@@ -26,7 +24,7 @@ module.exports = [{
   prototype: "button",
   name: "eglence",
   code: `
-$interactionUpdate[;{newEmbed:{title:DarkBot Eğlence}{description:
+$interactionUpdate[;{newEmbed:{title:SunBot Eğlence}{description:
   📗 **$getGuildVar[prefix]aşk-ölçer**
   Etiketlenen kullanıcıyla olan aşkınızı ölçer.
   **Kullanım:** $getGuildVar[prefix]aşk-ölçer <kişi>
@@ -74,7 +72,7 @@ $interactionUpdate[;{newEmbed:{title:DarkBot Eğlence}{description:
   📗 **$getGuildVar[prefix]şarkı-sözü**
   Yazdığınız şarkının sözlerini gösterir.
   **Kullanım:** $getGuildVar[prefix]şarkı-sözü <şarkı>
-}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:💰Ekonomi:secondary:ekonomi:false}};;everyone;false]
+}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:true}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:📙Geliştirici:secondary:gelistirici:false}};;everyone;false]
 
 `
 },{
@@ -82,7 +80,7 @@ $interactionUpdate[;{newEmbed:{title:DarkBot Eğlence}{description:
   prototype: "button",
   name: "mod",
   code: `
-$interactionUpdate[;{newEmbed:{title:DarkBot Moderasyon}{description:
+$interactionUpdate[;{newEmbed:{title:SunBot Moderasyon}{description:
   📕 **$getGuildVar[prefix]ban**
   Etiketlediğiniz kullanıcıyı sunucudan banlar.
   **Kullanım:** $getGuildVar[prefix]ban <kişi>
@@ -95,38 +93,38 @@ $interactionUpdate[;{newEmbed:{title:DarkBot Moderasyon}{description:
   Etiketlediğiniz kullanıcıyı belirttiğiniz nedenle uyarır.
   **Kullanım:** $getGuildVar[prefix]uyar <kişi> <sebep>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]uyarı-say**
+  📕 **$getGuildVar[prefix]uyarı-say**
   Etiketlediğiniz kullanıcının uyarı alma sayısını gösterir.
   **Kullanım:** $getGuildVar[prefix]uyarı-say <kişi>
 
- <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sa-as**
+ 📕 **$getGuildVar[prefix]sa-as**
   Etiketlediğiniz kullanıcının uyarı alma sayısını gösterir.
   **Kullanım:** $getGuildVar[prefix]sa-as <aç veya kapat>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]hgbb**
+  📕 **$getGuildVar[prefix]hgbb**
   Giriş çıkış sistemini ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]hgbb <aç veya kapat>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-bilgi**
+  📕 **$getGuildVar[prefix]sunucu-bilgi**
   Sunucu hakkındaki bilgileri gösterir.
   **Kullanım:** $getGuildVar[prefix]sunucu-bilgi
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-tanıt**
+  📕 **$getGuildVar[prefix]sunucu-tanıt**
   Sunucunuzu botun destek sunucusunda tanıtır.
   **Kullanım:** $getGuildVar[prefix]sunucu-tanıt
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]duyuru-kanal-ayarla**
+  📕 **$getGuildVar[prefix]duyuru-kanal-ayarla**
   Duyuru kanalını ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]duyuru-kanal-ayarla <kanal>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]duyuru-yap**
+  📕 **$getGuildVar[prefix]duyuru-yap**
   Duyuru kanalında yazdığınız duyuruyu yapar.
   **Kullanım:** $getGuildVar[prefix]duyuru-yap <duyuru>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-panel**
+  📕 **$getGuildVar[prefix]sunucu-panel**
   Sunucu panelini ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]sunucu-panel <kur veya sıfırla>
-}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:💰Ekonomi:secondary:ekonomi:false}};;everyone;false]
+}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:true}{button:📘Kullanıcı:secondary:kullanici:false}{button:📙Geliştirici:secondary:gelistirici:false}};;everyone;false]
 
 `
 },{
@@ -134,43 +132,43 @@ $interactionUpdate[;{newEmbed:{title:DarkBot Moderasyon}{description:
   prototype: "button",
   name: "kullanici",
   code: `
-$interactionUpdate[;{newEmbed:{title:DarkBot Kullanıcı}{description:
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]afk**
+$interactionUpdate[;{newEmbed:{title:SunBot Kullanıcı}{description:
+  📘 **$getGuildVar[prefix]afk**
   Afk moduna geçmenizi sağlar.
   **Kullanım:** $getGuildVar[prefix]afk <sebep>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]kullanıcı-bilgi**
+  📘 **$getGuildVar[prefix]kullanıcı-bilgi**
   Etiketlediğiniz kullanıcı hakkındaki bilgileri gösterir.
   **Kullanım:** $getGuildVar[prefix]afk <kişi>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]avatar**
+  📘 **$getGuildVar[prefix]avatar**
   Etiketlediğiniz kullanıcının avatarını gösterir.
   **Kullanım:** $getGuildVar[prefix]avatar <kişi>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]notlarım**
+  📘 **$getGuildVar[prefix]notlarım**
   Notlarınızı gösterir.
   **Kullanım:** $getGuildVar[prefix]notlarım
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]not-düzenle**
+  📘 **$getGuildVar[prefix]not-düzenle**
   Notunuzu düzenlemenizi sağlar.
   **Kullanım:** $getGuildVar[prefix]not-düzenle <yeni not>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]not-sil**
+  📘 **$getGuildVar[prefix]not-sil**
   Notunuzu silmenizi sağlar.
   **Kullanım:** $getGuildVar[prefix]not-sil
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]dm-gönder**
+  📘 **$getGuildVar[prefix]dm-gönder**
   Etiketlediğiniz kullanıcıya dm gönderir.
   **Kullanım:** $getGuildVar[prefix]dm-gönder <kişi> <mesaj>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]roblox-kayıt**
+  📘 **$getGuildVar[prefix]roblox-kayıt**
   Roblox üzerinden sisteme kayıt olmanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]roblox-kayıt <roblox id>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]roblox-profil**
+  📘 **$getGuildVar[prefix]roblox-profil**
   Etiketlediğiniz kullanıcının roblox profilini gösterir.
   **Kullanım:** $getGuildVar[prefix]roblox-profil <kişi>
-}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:💰Ekonomi:secondary:ekonomi:false}};;everyone;false]
+}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:true}{button:📙Geliştirici:secondary:gelistirici:false};;everyone;false]
 
 `
 },{
@@ -178,15 +176,15 @@ $interactionUpdate[;{newEmbed:{title:DarkBot Kullanıcı}{description:
   prototype: "button",
   name: "gelistirici",
   code: `
-$interactionUpdate[;{newEmbed:{title:DarkBot Ekonomi}{description:
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]eval**
+$interactionUpdate[;{newEmbed:{title:SunBot Geliştirici}{description:
+  📙 **$getGuildVar[prefix]eval**
   Yazdığınız komutları işlemenizi sağlar.
   **Kullanım:** $getGuildVar[prefix]eval <komutlar>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]kara-liste**
+  📙 **$getGuildVar[prefix]kara-liste**
   Kara listedeki üyeleri yönetmenizi sağlar.
   **Kullanım:** $getGuildVar[prefix]kara-liste <ekle veya sil> <kullanıcı ıd>
-}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:💰Ekonomi:secondary:ekonomi:false}};;everyone;false]
+}{thumbnail:$userAvatar[$clientID]}{footer:$username:$authorAvatar}{timestamp:ms}};{actionRow:{button:📗Eğlence:secondary:eglence:false}{button:📕Moderasyon:secondary:mod:false}{button:📘Kullanıcı:secondary:kullanici:false}{button:📙Geliştirici:secondary:gelistirici:true}};;everyone;false]
 $suppressErrors[]
 
 `
