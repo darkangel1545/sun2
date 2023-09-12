@@ -4,8 +4,8 @@ const ayarlar = require("./config.json");
 const bot = new AoiClient({
     token: process.env.token,
     prefix: ayarlar.prefix,
-    intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates"],
-    events: ["onMessage", "onInteractionCreate"],
+    intents: ["MessageContent", "Guilds", "GuildMessages", "GuildVoiceStates","GuildMembers","GuildBans"],
+    events: ["onMessage", "onJoin", "onLeave", "onBanAdd", "onBanRemove"],
     database: {
         type: "aoi.db",
         db: require("aoi.db"),
