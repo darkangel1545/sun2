@@ -1,5 +1,6 @@
 const { AoiClient, LoadCommands } = require("aoi.js");
 const ayarlar = require("./config.json");
+const { AoiVoice, PlayerEvents, PluginName, Cacher, Filter } = require("@akarui/aoi.music");
 
 const bot = new AoiClient({
     token: process.env.token,
@@ -18,7 +19,16 @@ const bot = new AoiClient({
 });
 
 
-
+const voice = new AoiVoice(bot, {
+    searchOptions: {
+        soundcloudClientId: "Soundcloud ID", // optional
+        youtubegl: "US",
+    },
+    requestOptions: {
+        offsetTimeout: 0,
+        soundcloudLikeTrackLimit: 200,
+    },
+});
 
 
 const loader = new LoadCommands(bot);
@@ -154,4 +164,12 @@ bot.command({
   $addTimestamp
   `,
 });
+
+// optional (cacher / filter)
+voice.addPlugin(PluginName.Cacher, new Cacher("memory" /* or "disk" */));
+voice.addPlugin(PluginName.Filter, new Filter({
+    filterFromStart: false,
+}));
+
+voice.bindExecutor(bot.functionManager.interpreter); // needed for events
 
