@@ -3,47 +3,47 @@ module.exports = {
   code: `
   $title[SunBot Yetkili]
   $description[
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]ban**
+  📕 **$getGuildVar[prefix]ban**
   Etiketlediğiniz kullanıcıyı sunucudan banlar.
   **Kullanım:** $getGuildVar[prefix]ban <kişi>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]ban-sayı**
+  📕 **$getGuildVar[prefix]ban-sayı**
   Etiketlediğiniz kullanıcının banladığı kişi sayısını gösterir.
   **Kullanım:** $getGuildVar[prefix]ban-sayı <kişi>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]uyar**
+  📕 **$getGuildVar[prefix]uyar**
   Etiketlediğiniz kullanıcıyı belirttiğiniz nedenle uyarır.
   **Kullanım:** $getGuildVar[prefix]uyar <kişi> <sebep>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]uyarı-say**
+  📕 **$getGuildVar[prefix]uyarı-say**
   Etiketlediğiniz kullanıcının uyarı alma sayısını gösterir.
   **Kullanım:** $getGuildVar[prefix]uyarı-say <kişi>
 
- <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sa-as**
+ 📕 **$getGuildVar[prefix]sa-as**
   Etiketlediğiniz kullanıcının uyarı alma sayısını gösterir.
   **Kullanım:** $getGuildVar[prefix]sa-as <aç veya kapat>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]hgbb**
+  📕 **$getGuildVar[prefix]hgbb**
   Giriş çıkış sistemini ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]hgbb <aç veya kapat>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-bilgi**
+  📕 **$getGuildVar[prefix]sunucu-bilgi**
   Sunucu hakkındaki bilgileri gösterir.
   **Kullanım:** $getGuildVar[prefix]sunucu-bilgi
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-tanıt**
+  📕 **$getGuildVar[prefix]sunucu-tanıt**
   Sunucunuzu botun destek sunucusunda tanıtır.
   **Kullanım:** $getGuildVar[prefix]sunucu-tanıt
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]duyuru-kanal-ayarla**
+  📕 **$getGuildVar[prefix]duyuru-kanal-ayarla**
   Duyuru kanalını ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]duyuru-kanal-ayarla <kanal>
 
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]duyuru-yap**
+  📕 **$getGuildVar[prefix]duyuru-yap**
   Duyuru kanalında yazdığınız duyuruyu yapar.
   **Kullanım:** $getGuildVar[prefix]duyuru-yap <duyuru>
   
-  <a:blue_arrow_heart:1141037090667237447> **$getGuildVar[prefix]sunucu-panel**
+  📕 **$getGuildVar[prefix]sunucu-panel**
   Sunucu panelini ayarlamanızı sağlar.
   **Kullanım:** $getGuildVar[prefix]sunucu-panel <kur veya sıfırla>
   ]

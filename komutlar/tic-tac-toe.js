@@ -9,7 +9,7 @@ const Game = new TicTacToe({
   isSlashGame: false,
   opponent: message.mentions.users.first(),
   embed: {
-    title: 'SunBot Tic Tac Toe',
+    title: 'SunBot Xox',
     color: '#5865F2',
     statusTitle: 'Durum',
     overTitle: 'Oyun Bitti!'

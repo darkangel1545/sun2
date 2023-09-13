@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "aoi.db": "^1.1.1",
-    "aoi.js": "^6.5.1",
+    "aoi.js": "^6.4.0",
     "discord-gamecord": "^4.4.0"
   },
   "engines": {
