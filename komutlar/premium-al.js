@@ -8,6 +8,6 @@ module.exports = {
   $addTimestamp
   $setGlobalUserVar[premium;yok;$mentioned[1]]
   $onlyIf[$getGlobalUserVar[premium;$mentioned[1]]!=yok;**Bu kullanıcıda zaten premium yok!**]
-  $onlyForIDs[1129725824405348412;**Sahibim Değilsin!**]
+  $onlyForIDs[903957128081981440;**Sahibim Değilsin!**]
   `
 }
